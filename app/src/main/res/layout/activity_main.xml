@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ui.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/messageType_id"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/messageType_id"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:id="@+id/linear_id"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Morring"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/morring_id" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Afternoon"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/afternoon_id" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Eevening"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/evening_id" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_id"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="Go to"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/nextActivty_id"
+            />
+
+    </RelativeLayout>
+</layout>
